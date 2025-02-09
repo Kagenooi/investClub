@@ -1,1 +1,84 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #1B1D26;
+}
+
+a,
+button,
+img,
+input,
+select,
+textarea {
+  display: block;
+}
+
+textarea {
+  resize: none;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+button,
+input,
+select {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#adaptive {
+  min-width: 1920px;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+@media (max-width: 1440px) {
+  #adaptive {
+    min-width: 1280px;
+    max-width: 1280px;
+  }
+}
+@media (max-width: 768px) {
+  #adaptive {
+    min-width: 640px;
+    max-width: 640px;
+  }
+}
+@media (max-width: 480px) {
+  #adaptive {
+    max-width: 320px;
+    min-width: 320px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #1B1D26;
+}
+
+a,
+button,
+img,
+input,
+select,
+textarea {
+    display: block;
+}
+
+textarea {
+    resize: none;
+}
+
+select {
+    appearance: none;
+}
+
+button,
+input,
+select {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
