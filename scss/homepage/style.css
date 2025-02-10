@@ -303,4 +303,24 @@ body {
     line-height: 10.14px;
     white-space: wrap;
   }
+}
+
+.about {
+  margin-top: -30px;
+  position: relative;
+  z-index: 1080;
+}
+.about__img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1010;
+}
+.about__wrapper {
+  width: 100%;
+  max-width: 1280px;
+  padding: 75px 50px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1020;
 }/*# sourceMappingURL=style.css.map */

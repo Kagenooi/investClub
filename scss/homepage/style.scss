@@ -141,3 +141,31 @@
         }
     }
 }
+
+
+
+.about {
+    margin-top: -30px;
+    position: relative;
+    z-index: 1080;
+
+    &__img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1010;
+    }
+
+    &__wrapper {
+        width: 100%;
+        max-width: 1280px;
+        padding: 75px 50px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1020;
+    }
+
+    &__title {
+        
+    }
+}
