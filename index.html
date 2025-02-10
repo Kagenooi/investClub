@@ -14,6 +14,7 @@
     <meta name="theme-color" content="#ffffff">
     <!-- favicon end -->
     <title>Главная</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="scss/homepage/style.css">
 </head>
 <body>
@@ -97,24 +98,24 @@
                     <div class="about__elems_item">
                         <img src="images/aboutDoll.svg" alt="" class="about__elems_item_icon">
                         <p class="about__elems_item_pr">
-                            УВЕЛИЧИЛИ свой капитал 
-                            <strong>более, чем в 2 раза</strong>
+                            УВЕЛИЧИЛИ свой <br> капитал 
+                            <strong>более, <br> чем в 2 раза</strong>
                         </p>
                     </div>
                     <div class="about__elems_item">
-                        <h3 class="about__elems_item_tilte">20</h3>
+                        <h3 class="about__elems_item_title">20</h3>
                         <p class="about__elems_item_pr">
-                            % инвесторов вышли на  
+                            % инвесторов вышли <br> на  
                             <strong>ДОХОД от 300 000</strong>
-                            рублей в месяц
+                            <br> рублей в месяц
                         </p>
                     </div>
                     <div class="about__elems_item">
-                        <h3 class="about__elems_item_tilte">40</h3>
+                        <h3 class="about__elems_item_title">40</h3>
                         <p class="about__elems_item_pr">
                             %
-                            <strong>ЗАРАБАТЫВАЮТ от 100 000</strong>  
-                            рублейв месяц
+                            <strong>ЗАРАБАТЫВАЮТ <br> от 100 000</strong>  
+                            рублей <br> в месяц
                         </p>
                     </div>
                 </div>
@@ -125,26 +126,27 @@
 
         <section class="product" id="product">
             <div class="product__wrapper">
+                <h2 class="product__title">Продукты нашего клуба</h2>
                 <div class="product__btns">
-                    <button class="product__btns_btn" type="button">
+                    <button class="product__btns_btn" type="button" id="defaultProduct" data-tab="tab1" onclick="tabs(this, 'product__tabs_el', 'product__btns_btn')">
                         <span class="product__btns_btn_number">Продукт №1</span>
                         <strong class="product__btns_btn_name">Trading</strong>
                     </button>
-                    <button class="product__btns_btn" type="button">
+                    <button class="product__btns_btn" type="button" data-tab="tab2" onclick="tabs(this, 'product__tabs_el', 'product__btns_btn')">
                         <span class="product__btns_btn_number">Продукт №2</span>
                         <strong class="product__btns_btn_name">Finance</strong>
                     </button>
-                    <button class="product__btns_btn" type="button">
+                    <button class="product__btns_btn" type="button" data-tab="tab3" onclick="tabs(this, 'product__tabs_el', 'product__btns_btn')">
                         <span class="product__btns_btn_number">Продукт №3</span>
                         <strong class="product__btns_btn_name">Game Fi и приложение TMA</strong>
                     </button>
-                    <button class="product__btns_btn" type="button">
+                    <button class="product__btns_btn" type="button" data-tab="tab4" onclick="tabs(this, 'product__tabs_el', 'product__btns_btn')">
                         <span class="product__btns_btn_number">Продукт №4</span>
                         <strong class="product__btns_btn_name">Платежная система (Payment) И собственный кошелек (Wallet)</strong>
                     </button>
                 </div>
                 <div class="product__tabs">
-                    <div class="product__tabs_el">
+                    <div class="product__tabs_el" id="tab1">
                         <p class="product__tabs_el_pr">Готовые IT-решения для инвесторов и трейдеров. Наша продуктовая линейка торговых алгоритмов включает в себя множество стратегий, которые работают как на растущем, так и на падающем рынке.</p>
                         <ul class="product__tabs_el_list">
                             <li>4 вида споровых ботов.</li>
@@ -155,25 +157,43 @@
                         <p class="product__tabs_el_pr">За каждым пользователем закрепляется технический куратор. </p>
                         <button type="button" class="product__tabs_el_btn">написать в тех.поддержку</button>
                     </div>
-                    <div class="product__tabs_el">
+                    <div class="product__tabs_el" id="tab2">
                         <p class="product__tabs_el_pr"><strong>Идеальное решение для новичков.</strong>  Мы предоставим ключевые собственные индексы, на основе ТОПовых фундаментальных криптовалют.</p>
                         <ul class="product__tabs_el_gridList">
-                            <li>Покупка, продажа активов</li>
-                            <li>Инвестирование и хранение активов</li>
-                            <li>Стейкинг</li>
-                            <li>Фарминг</li>
-                            <li>Кредитование</li>
-                            <li>Займы</li>
+                            <li>
+                                <img src="images/king.png" alt="" class="product__tabs_el_gridList_icon">
+                                <span class="product__tabs_el_gridList_txt">Покупка, продажа активов</span>
+                            </li>
+                            <li>
+                                <img src="images/king.png" alt="" class="product__tabs_el_gridList_icon">
+                                <span class="product__tabs_el_gridList_txt">Фарминг</span>
+                            </li>
+                            <li>
+                                <img src="images/king.png" alt="" class="product__tabs_el_gridList_icon">
+                                <span class="product__tabs_el_gridList_txt">Инвестирование и хранение активов</span>
+                            </li>
+                            <li>
+                                <img src="images/king.png" alt="" class="product__tabs_el_gridList_icon">
+                                <span class="product__tabs_el_gridList_txt">Кредитование</span>
+                            </li>
+                            <li>
+                                <img src="images/king.png" alt="" class="product__tabs_el_gridList_icon">
+                                <span class="product__tabs_el_gridList_txt">Стейкинг</span>
+                            </li>
+                            <li>
+                                <img src="images/king.png" alt="" class="product__tabs_el_gridList_icon">
+                                <span class="product__tabs_el_gridList_txt">Займы</span>
+                            </li>
                         </ul>
                         <p class="product__tabs_el_pr">Возможность построения партнерской сети и получения дополнительных бонусов и щедрых денежных выплат от нашей компании.</p>
                     </div>
-                    <div class="product__tabs_el">
+                    <div class="product__tabs_el" id="tab3">
                         <p class="product__tabs_el_pr">Мы создаем собственное мобильное приложение телеграм mini-app, в котором будет несколько простых игр. 
                             Играй и зарабатывай поинты, а также наши токены QNX, меняй их на usdt и пользуйся по своему усмотрению.</p>
                         <p class="product__tabs_el_pr">Построй свою команду игроков и стань лидером в данном направлении, зарабатывая в десятки раз больше чем остальные. </p>
                         <p class="product__tabs_el_pr">Конкурсы, игры, розыгрыши и другие мероприятия для активности участников сообщества.</p>
                     </div>
-                    <div class="product__tabs_el">
+                    <div class="product__tabs_el" id="tab4">
                         <p class="product__tabs_el_pr">Данный продукт позволит покупать, продавать, обменивать основные цифровые финансовые активы, а также позволит их хранить, получая вознаграждения за стейкинг. </p>
                         <p class="product__tabs_el_pr">Наша задача решить основные проблемы, связанные с переводами и перемещениями денежных средств по всему Миру.</p>
                     </div>
@@ -185,6 +205,13 @@
             <div class="resident__wrapper">
                 <h2 class="resident__title">Наши резиденты</h2>
                 <div class="resident__slider swiper">
+                    <button type="button" class="resident__slider_btn prev">
+                        <img src="" alt="" class="resident__slider_btn_icon">
+                    </button>
+                    <button type="button" class="resident__slider_btn next">
+                        <img src="" alt="" class="resident__slider_btn_icon">
+                    </button>
+                    <div class="resident__slider_pagination"></div>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="resident__item">
@@ -489,6 +516,7 @@
 
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="js/index.js"></script>
 </body>
 </html>
