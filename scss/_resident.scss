@@ -1,0 +1,93 @@
+.resident {
+    background: #1B1D26;
+    width: 100%;
+
+    &__wrapper {
+        width: 100%;
+        max-width: 1280px;
+        padding: 65px 50px 90px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 38px;
+        line-height: 48.18px;
+        letter-spacing: 7%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    &__slider {
+        position: relative;
+        padding: 0 60px;
+
+        &_btn {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+
+            &.next {
+                right: 0;
+            }
+
+            &.prev {
+                left: 0;
+            }
+        }
+
+        &_pagination {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .swiper-pagination-bullet {
+                background: #fff;
+                opacity: 1;
+
+                &-active {
+                    background: #FBE78E;
+                }
+            }
+        }
+    }
+    .swiper-slide {
+        height: 100%;
+    }
+
+    &__item {
+        background: url('../../images/resident.png') no-repeat center;
+        background-size: 100% 100%;
+        padding: 40px 20px;
+        height: 615px;
+
+        &_img {
+            margin: 0 auto 36px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        &_name {
+            font-size: 20px;
+            line-height: 25.36px;
+            letter-spacing: 7%;
+            text-align: center;
+            background: linear-gradient(90deg, #FFF9DF 0%, #FBE78E 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+        }
+
+        &_pr {
+            line-height: 18.83px;
+            letter-spacing: 7%;
+            text-align: center;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

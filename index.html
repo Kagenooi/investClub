@@ -206,12 +206,11 @@
                 <h2 class="resident__title">Наши резиденты</h2>
                 <div class="resident__slider swiper">
                     <button type="button" class="resident__slider_btn prev">
-                        <img src="" alt="" class="resident__slider_btn_icon">
+                        <img src="icons/left.svg" alt="" class="resident__slider_btn_icon">
                     </button>
                     <button type="button" class="resident__slider_btn next">
-                        <img src="" alt="" class="resident__slider_btn_icon">
+                        <img src="icons/right.svg" alt="" class="resident__slider_btn_icon">
                     </button>
-                    <div class="resident__slider_pagination"></div>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="resident__item">
@@ -324,19 +323,23 @@
                             </div>
                         </div>
                     </div>
+                    <div class="resident__slider_pagination"></div>
                 </div>
             </div>
         </section>
 
         <section class="result" id="result">
+            <img src="images/resultBg.png" alt="" class="result__img">
             <div class="result__wrapper">
                 <h2 class="result__title">Результаты наших резидентов</h2>
                 <div class="result__container">
                     <div class="result__item">
                         <div class="result__item_header">
                             <img src="images/best1.png" alt="" class="result__item_header_img">
-                            <strong class="result__item_header_name">Дмитрий Верстин</strong>
-                            <p class="result__item_header_city">г. Королев</p>
+                            <div class="result__item_header_desc">
+                                <strong class="result__item_header_name">Дмитрий <br> Верстин</strong>
+                                <p class="result__item_header_city">г. Королев</p>
+                            </div>
                         </div>
                         <div class="result__item_desc">
                             <ul class="result__item_desc_list">
@@ -349,8 +352,10 @@
                     <div class="result__item">
                         <div class="result__item_header">
                             <img src="images/best2.png" alt="" class="result__item_header_img">
-                            <strong class="result__item_header_name">Максим и Иванна Михайловы</strong>
-                            <p class="result__item_header_city">г. Москва</p>
+                            <div class="result__item_header_desc">
+                                <strong class="result__item_header_name">Максим и Иванна <br> Михайловы</strong>
+                                <p class="result__item_header_city">г. Москва</p>
+                            </div>
                         </div>
                         <div class="result__item_desc">
                             <ul class="result__item_desc_list">
@@ -363,8 +368,10 @@
                     <div class="result__item">
                         <div class="result__item_header">
                             <img src="images/best3.png" alt="" class="result__item_header_img">
-                            <strong class="result__item_header_name">Волков Евгений</strong>
-                            <p class="result__item_header_city">г. Нижний Новгород</p>
+                            <div class="result__item_header_desc">
+                                <strong class="result__item_header_name">Волков <br> Евгений</strong>
+                                <p class="result__item_header_city">г. Нижний Новгород</p>
+                            </div>
                         </div>
                         <div class="result__item_desc">
                             <ul class="result__item_desc_list">
@@ -378,8 +385,10 @@
                     <div class="result__item">
                         <div class="result__item_header">
                             <img src="images/best4.png" alt="" class="result__item_header_img">
-                            <strong class="result__item_header_name">Борис Грицай</strong>
-                            <p class="result__item_header_city">г. Мариуполь</p>
+                            <div class="result__item_header_desc">
+                                <strong class="result__item_header_name">Борис <br> Грицай</strong>
+                                <p class="result__item_header_city">г. Мариуполь</p>
+                            </div>
                         </div>
                         <div class="result__item_desc">
                             <ul class="result__item_desc_list">
@@ -471,6 +480,7 @@
         </section>
 
         <section class="info">
+            <img src="images/info.png" alt="" class="info__img">
             <div class="info__wrapper">
                 <h2 class="info__title">
                     <strong>Вступи в клуб</strong> и получи доступ к лучшим инвестиционным идеям,
@@ -484,32 +494,35 @@
 
         <footer class="footer" id="contact">
             <div class="footer__wrapper">
-                <h2 class="footer__title">Наши контакты</h2>
-                <ul class="footer__social">
-                    <li>
-                        <a href="" class="footer__social_link">
-                            <img src="images/instagram.svg" alt="" class="footer__social_link_icon">
-                            <span class="footer__social_link_txt">Instagram</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="footer__social_link">
-                            <img src="images/telegram.svg" alt="" class="footer__social_link_icon">
-                            <span class="footer__social_link_txt">Telegram</span>
-                        </a>
-                    </li>
-                </ul>
-                <p class="footer__or">ИЛИ ОТСКАНИРУЙ QR код</p>
-                <div class="footer__qr">
-                    <img src="images/qr1.png" alt="" class="footer__qr_img">
-                    <img src="images/qr2.png" alt="" class="footer__qr_img">
+                <div class="footer__container">
+                    <h2 class="footer__title">Наши контакты</h2>
+                    <ul class="footer__social">
+                        <li>
+                            <a href="" class="footer__social_link">
+                                <img src="images/instagram.svg" alt="" class="footer__social_link_icon">
+                                <span class="footer__social_link_txt">Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__social_link">
+                                <img src="images/telegram.svg" alt="" class="footer__social_link_icon">
+                                <span class="footer__social_link_txt">Telegram</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="footer__or">ИЛИ ОТСКАНИРУЙ QR код</p>
+                    <div class="footer__qr">
+                        <img src="images/qr1.png" alt="" class="footer__qr_img">
+                        <img src="images/qr2.png" alt="" class="footer__qr_img">
+                    </div>
+                    <ul class="footer__contact">
+                        <li><a href="" class="footer__contact_link">Написать в тех. поддержку</a></li>
+                        <li><a href="" class="footer__contact_link">info@vsesvoi.team</a></li>
+                    </ul>
                 </div>
-                <ul class="footer__contact">
-                    <li><a href="" class="footer__contact_link">Написать в тех. поддержку</a></li>
-                    <li><a href="" class="footer__contact_link">info@vsesvoi.team</a></li>
-                </ul>
                 <ul class="footer__menu">
                     <li><a href="" class="footer__menu_link">Политика конфиденциальности</a></li>
+                    <li><a href="https://www.hitotsu.am" class="footer__menu_link">Created by Hitotsu LLC</a></li>
                 </ul>
             </div>
         </footer>

@@ -1,0 +1,98 @@
+.tarif {
+    width: 100%;
+
+    &__wrapper {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 80px 50px 95px;
+    }
+
+    &__title {
+        font-size: 38px;
+        line-height: 48.18px;
+        letter-spacing: 7%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__elems {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 45px;
+        height: 1200px;
+
+
+        &_item {
+            background: url('../../images/tarifBg.png') no-repeat center;
+            height: 100%;
+            padding: 30px 20px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &_icon {
+                margin: 0 auto 16px;
+                width: 46px;
+            }
+
+            &_title {
+                font-size: 20px;
+                line-height: 25.36px;
+                letter-spacing: 7%;
+                text-align: center;
+                background: linear-gradient(90deg, #FFF9DF 0%, #FBE78E 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-bottom: 26px;
+            }
+
+            &_list {
+                display: grid;
+                grid-gap: 10px;
+                padding-left: 20px;
+                list-style-type: disc;
+
+                li {
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 7%;
+                }
+            }
+
+            &_priceName {
+                font-size: 16px;
+                line-height: 18.83px;
+                letter-spacing: 7%;
+                text-align: center;
+            }
+
+            &_price {
+                margin: 20px 0 40px;
+                font-size: 20px;
+                line-height: 25.36px;
+                letter-spacing: 7%;
+                text-align: center;
+                background: linear-gradient(90deg, #FFF9DF 0%, #FBE78E 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            &_btn {
+                font-size: 12px;
+                line-height: 46px;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #000;
+                border-radius: 30px;
+                background: linear-gradient(90deg, #FBE78E 0.5%, #FFF9DF 55.5%, #FBE78E 100%);
+                box-shadow: 0px 0px 30px 0px #FFEFC099;
+                padding: 4px 50px;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 260px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

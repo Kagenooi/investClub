@@ -16,6 +16,9 @@ document.querySelector('#defaultProduct').click();
 
 const resident = new Swiper(".resident__slider", {
     cssMode: true,
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 40,
     navigation: {
         nextEl: ".resident__slider_btn.next",
         prevEl: ".resident__slider_btn.prev",
