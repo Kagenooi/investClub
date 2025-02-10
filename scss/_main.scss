@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'DrukTextWideCyr-Medium';
+    src: url('../../fonts/druk/druktextwidecyr-medium.eot');
+    src: url('../../fonts/druk/druktextwidecyr-medium.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/druk/druktextwidecyr-medium.woff2') format('woff2'),
+        url('../../fonts/druk/druktextwidecyr-medium.woff') format('woff'),
+        url('../../fonts/druk/druktextwidecyr-medium.ttf') format('truetype'),
+        url('../../fonts/druk/druktextwidecyr-medium.svg#druktextwidecyr-medium') format('svg');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../fonts/gilroy/Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('../../fonts/gilroy/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/gilroy/Gilroy-Medium.woff') format('woff'),
+        url('../../fonts/gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +26,7 @@
     font-weight: 500;
     color: #fff;
     font-family: sans-serif;
+    font-family: 'Gilroy';
 }
 
 html {

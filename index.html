@@ -62,7 +62,10 @@
         </header>
 
         <section class="about" id="about">
-            <img src="images/aboutDecor.png" alt="" class="about__img">
+            <picture class="about__img">
+                <source srcset="images/aboutDecorMobile.png" media="(max-width: 480px)">
+                <img src="images/aboutDecor.png" alt="" class="about__img">
+            </picture>
             <div class="about__wrapper">
                 <h2 class="about__title"><strong>все свои </strong>- это инвестиционный клуб закрытого типа</h2>
                 <strong class="about__str">Сообщество единомышленников, инвесторов, предпринимателей, фрилансеров, объединённых целью</strong>
@@ -124,7 +127,7 @@
             </div>  
         </section>
 
-        <section class="product" id="product">
+        <section class="product desktop" id="product">
             <div class="product__wrapper">
                 <h2 class="product__title">Продукты нашего клуба</h2>
                 <div class="product__btns">
@@ -138,11 +141,11 @@
                     </button>
                     <button class="product__btns_btn" type="button" data-tab="tab3" onclick="tabs(this, 'product__tabs_el', 'product__btns_btn')">
                         <span class="product__btns_btn_number">Продукт №3</span>
-                        <strong class="product__btns_btn_name">Game Fi и приложение TMA</strong>
+                        <strong class="product__btns_btn_name">Game <span class="product__btns_btn_more"> Fi и приложение TMA</span></strong>
                     </button>
                     <button class="product__btns_btn" type="button" data-tab="tab4" onclick="tabs(this, 'product__tabs_el', 'product__btns_btn')">
                         <span class="product__btns_btn_number">Продукт №4</span>
-                        <strong class="product__btns_btn_name">Платежная система (Payment) И собственный кошелек (Wallet)</strong>
+                        <strong class="product__btns_btn_name"><span class="product__btns_btn_more">Платежная система (</span>Payment <span class="product__btns_btn_more">) И собственный кошелек (Wallet)</span></strong>
                     </button>
                 </div>
                 <div class="product__tabs">
@@ -197,6 +200,98 @@
                         <p class="product__tabs_el_pr">Данный продукт позволит покупать, продавать, обменивать основные цифровые финансовые активы, а также позволит их хранить, получая вознаграждения за стейкинг. </p>
                         <p class="product__tabs_el_pr">Наша задача решить основные проблемы, связанные с переводами и перемещениями денежных средств по всему Миру.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product mobile" id="product">
+            <div class="product__wrapper">
+                <h2 class="product__title">Продукты нашего клуба</h2>
+                <div class="swiper productContent">
+                    <button type="button" class="product__slider_btn prev">
+                        <img src="icons/left.svg" alt="" class="product__slider_btn_icon">
+                    </button>
+                    <button type="button" class="product__slider_btn next">
+                        <img src="icons/right.svg" alt="" class="product__slider_btn_icon">
+                    </button>
+                    <div class="product__tabs swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product__btns_btn">
+                                <span class="product__btns_btn_number">Продукт №1</span>
+                                <strong class="product__btns_btn_name">Trading</strong>
+                            </div>
+                            <div class="product__tabs_el">
+                                <p class="product__tabs_el_pr">Готовые IT-решения для инвесторов и трейдеров. Наша продуктовая линейка торговых алгоритмов включает в себя множество стратегий, которые работают как на растущем, так и на падающем рынке.</p>
+                                <ul class="product__tabs_el_list">
+                                    <li>4 вида споровых ботов.</li>
+                                    <li>2 вида фьючерсных ботов (Short и Long).</li>
+                                </ul>
+                                <p class="product__tabs_el_pr">Выбирайте уровень риска и запускаете своего бота в работу.</p>
+                                <p class="product__tabs_el_pr">За 2024 год, наши инвесторы заработали от 122% прибыли.</p>
+                                <p class="product__tabs_el_pr">За каждым пользователем закрепляется технический куратор. </p>
+                                <button type="button" class="product__tabs_el_btn">написать в тех.поддержку</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product__btns_btn">
+                                <span class="product__btns_btn_number">Продукт №2</span>
+                                <strong class="product__btns_btn_name">Finance</strong>
+                            </div>
+                            <div class="product__tabs_el">
+                                <p class="product__tabs_el_pr"><strong>Идеальное решение для новичков.</strong>  Мы предоставим ключевые собственные индексы, на основе ТОПовых фундаментальных криптовалют.</p>
+                                <ul class="product__tabs_el_gridList">
+                                    <li>
+                                        <img src="images/king.png" alt="" class="product__tabs_el_gridList_icon">
+                                        <span class="product__tabs_el_gridList_txt">Покупка, продажа активов</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/king.png" alt="" class="product__tabs_el_gridList_icon">
+                                        <span class="product__tabs_el_gridList_txt">Фарминг</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/king.png" alt="" class="product__tabs_el_gridList_icon">
+                                        <span class="product__tabs_el_gridList_txt">Инвестирование и хранение активов</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/king.png" alt="" class="product__tabs_el_gridList_icon">
+                                        <span class="product__tabs_el_gridList_txt">Кредитование</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/king.png" alt="" class="product__tabs_el_gridList_icon">
+                                        <span class="product__tabs_el_gridList_txt">Стейкинг</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/king.png" alt="" class="product__tabs_el_gridList_icon">
+                                        <span class="product__tabs_el_gridList_txt">Займы</span>
+                                    </li>
+                                </ul>
+                                <p class="product__tabs_el_pr">Возможность построения партнерской сети и получения дополнительных бонусов и щедрых денежных выплат от нашей компании.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product__btns_btn">
+                                <span class="product__btns_btn_number">Продукт №3</span>
+                                <strong class="product__btns_btn_name">Game</strong>
+                            </div>
+                            <div class="product__tabs_el" id="tab3">
+                                <p class="product__tabs_el_pr">Мы создаем собственное мобильное приложение телеграм mini-app, в котором будет несколько простых игр. 
+                                    Играй и зарабатывай поинты, а также наши токены QNX, меняй их на usdt и пользуйся по своему усмотрению.</p>
+                                <p class="product__tabs_el_pr">Построй свою команду игроков и стань лидером в данном направлении, зарабатывая в десятки раз больше чем остальные. </p>
+                                <p class="product__tabs_el_pr">Конкурсы, игры, розыгрыши и другие мероприятия для активности участников сообщества.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product__btns_btn">
+                                <span class="product__btns_btn_number">Продукт №4</span>
+                                <strong class="product__btns_btn_name">Payment</strong>
+                            </div>
+                            <div class="product__tabs_el" id="tab4">
+                                <p class="product__tabs_el_pr">Данный продукт позволит покупать, продавать, обменивать основные цифровые финансовые активы, а также позволит их хранить, получая вознаграждения за стейкинг. </p>
+                                <p class="product__tabs_el_pr">Наша задача решить основные проблемы, связанные с переводами и перемещениями денежных средств по всему Миру.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__slider_pagination"></div>
                 </div>
             </div>
         </section>
@@ -329,75 +424,88 @@
         </section>
 
         <section class="result" id="result">
-            <img src="images/resultBg.png" alt="" class="result__img">
+            <picture class="result__img">
+                <source srcset="images/resultBgMobile.png" media="(max-width: 480px)">
+                <source srcset="images/resultBgTablet.png" media="(max-width: 768px)">
+                <img src="images/resultBg.png" alt="" class="result__img">
+            </picture>
             <div class="result__wrapper">
                 <h2 class="result__title">Результаты наших резидентов</h2>
-                <div class="result__container">
-                    <div class="result__item">
-                        <div class="result__item_header">
-                            <img src="images/best1.png" alt="" class="result__item_header_img">
-                            <div class="result__item_header_desc">
-                                <strong class="result__item_header_name">Дмитрий <br> Верстин</strong>
-                                <p class="result__item_header_city">г. Королев</p>
+                <div class="swiper resultSlider">
+                    <button type="button" class="result__slider_btn prev">
+                        <img src="icons/left.svg" alt="" class="result__slider_btn_icon">
+                    </button>
+                    <button type="button" class="result__slider_btn next">
+                        <img src="icons/right.svg" alt="" class="result__slider_btn_icon">
+                    </button>
+                    <div class="result__container swiper-wrapper">
+                        <div class="result__item swiper-slide">
+                            <div class="result__item_header">
+                                <img src="images/best1.png" alt="" class="result__item_header_img">
+                                <div class="result__item_header_desc">
+                                    <strong class="result__item_header_name">Дмитрий <br> Верстин</strong>
+                                    <p class="result__item_header_city">г. Королев</p>
+                                </div>
+                            </div>
+                            <div class="result__item_desc">
+                                <ul class="result__item_desc_list">
+                                    <li>Присоединился к нам летом 2024г и уже заработал более 0,5 млн рублей. </li>
+                                    <li>Стал нашим эдвайзером и акционером.</li>
+                                    <li>Вышел на доход от 200 тысяч рублей в месяц</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="result__item_desc">
-                            <ul class="result__item_desc_list">
-                                <li>Присоединился к нам летом 2024г и уже заработал более 0,5 млн рублей. </li>
-                                <li>Стал нашим эдвайзером и акционером.</li>
-                                <li>Вышел на доход от 200 тысяч рублей в месяц</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="result__item">
-                        <div class="result__item_header">
-                            <img src="images/best2.png" alt="" class="result__item_header_img">
-                            <div class="result__item_header_desc">
-                                <strong class="result__item_header_name">Максим и Иванна <br> Михайловы</strong>
-                                <p class="result__item_header_city">г. Москва</p>
+                        <div class="result__item swiper-slide">
+                            <div class="result__item_header">
+                                <img src="images/best2.png" alt="" class="result__item_header_img">
+                                <div class="result__item_header_desc">
+                                    <strong class="result__item_header_name">Максим и Иванна <br> Михайловы</strong>
+                                    <p class="result__item_header_city">г. Москва</p>
+                                </div>
+                            </div>
+                            <div class="result__item_desc">
+                                <ul class="result__item_desc_list">
+                                    <li>Присоединились в июле 2024г и успешно прошли крупнейшую ликвидацию в истории крипто-рынка 05 августа. После чего поверили в надежность продукта и продолжили работу с нами. </li>
+                                    <li>В общей сложности заработали уже более 2 млн рублей в нашем инвест.клубе. </li>
+                                    <li>За декабрь доход уже более 700 тысяч рублей</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="result__item_desc">
-                            <ul class="result__item_desc_list">
-                                <li>Присоединились в июле 2024г и успешно прошли крупнейшую ликвидацию в истории крипто-рынка 05 августа. После чего поверили в надежность продукта и продолжили работу с нами. </li>
-                                <li>В общей сложности заработали уже более 2 млн рублей в нашем инвест.клубе. </li>
-                                <li>За декабрь доход уже более 700 тысяч рублей</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="result__item">
-                        <div class="result__item_header">
-                            <img src="images/best3.png" alt="" class="result__item_header_img">
-                            <div class="result__item_header_desc">
-                                <strong class="result__item_header_name">Волков <br> Евгений</strong>
-                                <p class="result__item_header_city">г. Нижний Новгород</p>
+                        <div class="result__item swiper-slide">
+                            <div class="result__item_header">
+                                <img src="images/best3.png" alt="" class="result__item_header_img">
+                                <div class="result__item_header_desc">
+                                    <strong class="result__item_header_name">Волков <br> Евгений</strong>
+                                    <p class="result__item_header_city">г. Нижний Новгород</p>
+                                </div>
+                            </div>
+                            <div class="result__item_desc">
+                                <ul class="result__item_desc_list">
+                                    <li>Прошел с нами также все качели крито-рынка, в том числе 05 августа 2024г, после чего значительно усилил депозит. </li>
+                                    <li>Общий доход составил уже около 0,5 млн рублей.</li>
+                                    <li>За декабрь заработано уже более 250 тыс.рублей. </li>
+                                    <li>Евгений является нашим резидентом и акционером.</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="result__item_desc">
-                            <ul class="result__item_desc_list">
-                                <li>Прошел с нами также все качели крито-рынка, в том числе 05 августа 2024г, после чего значительно усилил депозит. </li>
-                                <li>Общий доход составил уже около 0,5 млн рублей.</li>
-                                <li>За декабрь заработано уже более 250 тыс.рублей. </li>
-                                <li>Евгений является нашим резидентом и акционером.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="result__item">
-                        <div class="result__item_header">
-                            <img src="images/best4.png" alt="" class="result__item_header_img">
-                            <div class="result__item_header_desc">
-                                <strong class="result__item_header_name">Борис <br> Грицай</strong>
-                                <p class="result__item_header_city">г. Мариуполь</p>
+                        <div class="result__item swiper-slide">
+                            <div class="result__item_header">
+                                <img src="images/best4.png" alt="" class="result__item_header_img">
+                                <div class="result__item_header_desc">
+                                    <strong class="result__item_header_name">Борис <br> Грицай</strong>
+                                    <p class="result__item_header_city">г. Мариуполь</p>
+                                </div>
+                            </div>
+                            <div class="result__item_desc">
+                                <ul class="result__item_desc_list">
+                                    <li> Борис присоединился к нам в ноябре текущего года и успел заработать более 200 000₽. Ему очень понравился наш продукт, наши цели и наша миссия.</li>
+                                    <li>Он стал резидентом нашего закрытого клуба.</li>
+                                    <li>Кроме того, Борис стал акционером Quantex.</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="result__item_desc">
-                            <ul class="result__item_desc_list">
-                                <li> Борис присоединился к нам в ноябре текущего года и успел заработать более 200 000₽. Ему очень понравился наш продукт, наши цели и наша миссия.</li>
-                                <li>Он стал резидентом нашего закрытого клуба.</li>
-                                <li>Кроме того, Борис стал акционером Quantex.</li>
-                            </ul>
-                        </div>
                     </div>
+                    <div class="result__slider_pagination"></div>
                 </div>
             </div>
         </section>
@@ -405,82 +513,92 @@
         <section class="tarif" id="tarif">
             <div class="tarif__wrapper">
                 <h2 class="tarif__title">Как стать участником?</h2>
-                <div class="tarif__elems">
-                    <div class="tarif__elems_item">
-                        <div class="tarif__elems_item_wrapper">
-                            <img src="images/tarif1.png" alt="" class="tarif__elems_item_icon">
-                            <h3 class="tarif__elems_item_title">Пользователь</h3>
-                            <ul class="tarif__elems_item_list">
-                                <li>Доступ к личному кабинету</li>
-                                <li>Доступ к разделу Академия (пользователь)</li>
-                                <li>Доступ к основным торговым алгоритмам (комиссия с прибыли 30%)</li>
-                                <li>Открытый телеграм-канал</li>
-                                <li>Инвестиционные идеи (До 4х в месяц. Фондовый рынок, криптовалюта)</li>
-                            </ul>
+                <div class="swiper tarifSlider">
+                    <button type="button" class="tarif__slider_btn prev">
+                        <img src="icons/left.svg" alt="" class="tarif__slider_btn_icon">
+                    </button>
+                    <button type="button" class="tarif__slider_btn next">
+                        <img src="icons/right.svg" alt="" class="tarif__slider_btn_icon">
+                    </button>
+                    <div class="tarif__elems swiper-wrapper">
+                        <div class="tarif__elems_item swiper-slide">
+                            <div class="tarif__elems_item_wrapper">
+                                <img src="images/tarif1.png" alt="" class="tarif__elems_item_icon">
+                                <h3 class="tarif__elems_item_title">Пользователь</h3>
+                                <ul class="tarif__elems_item_list">
+                                    <li>Доступ к личному кабинету</li>
+                                    <li>Доступ к разделу Академия (пользователь)</li>
+                                    <li>Доступ к основным торговым алгоритмам (комиссия с прибыли 30%)</li>
+                                    <li>Открытый телеграм-канал</li>
+                                    <li>Инвестиционные идеи (До 4х в месяц. Фондовый рынок, криптовалюта)</li>
+                                </ul>
+                            </div>
+                            <div class="tarif__elems_item_footer">
+                                <p class="tarif__elems_item_priceName">СТОИМОСТЬ</p>
+                                <p class="tarif__elems_item_price">БЕЗ ОПЛАТЫ</p>
+                                <button type="button" class="tarif__elems_item_btn">Вступить сейчас</button>
+                            </div>
                         </div>
-                        <div class="tarif__elems_item_footer">
-                            <p class="tarif__elems_item_priceName">СТОИМОСТЬ</p>
-                            <p class="tarif__elems_item_price">БЕЗ ОПЛАТЫ</p>
-                            <button type="button" class="tarif__elems_item_btn">Вступить сейчас</button>
+                        <div class="tarif__elems_item swiper-slide">
+                            <div class="tarif__elems_item_wrapper">
+                                <img src="images/tarif2.png" alt="" class="tarif__elems_item_icon">
+                                <h3 class="tarif__elems_item_title">пользователь PRO</h3>
+                                <ul class="tarif__elems_item_list">
+                                    <li>Доступ к личному кабинету</li>
+                                    <li>Доступ к разделу Академия (резидент)</li>
+                                    <li>Доступ к основным торговым алгоритмам (комиссия с прибыли 20%)</li>
+                                    <li>Закрытый телеграм-канал</li>
+                                    <li>Инвестиционные идеи (до 10 в месяц. Фондовый рынок, криптовалюта)</li>
+                                    <li>Еженедельная аналитика финансовых рынков</li>
+                                    <li>Персональная помощь куратора</li>
+                                    <li>Помощь в составлении личного финансового плана</li>
+                                    <li>Инвестции в бизнес (в том числе совместные ПУЛы)</li>
+                                    <li>Доступ к онлайн обучению от ведущих экспертов</li>
+                                    <li>Помощь в подборе доходной недвижимости в России и за рубежом</li>
+                                </ul>
+                            </div>
+                            <div class="tarif__elems_item_footer">
+                                <p class="tarif__elems_item_priceName">СТОИМОСТЬ</p>
+                                <p class="tarif__elems_item_price">29 900 руб.</p>
+                                <button type="button" class="tarif__elems_item_btn">Вступить сейчас</button>
+                            </div>
+                        </div>
+                        <div class="tarif__elems_item swiper-slide">
+                            <div class="tarif__elems_item_wrapper">
+                                <img src="images/tarif3.png" alt="" class="tarif__elems_item_icon">
+                                <h3 class="tarif__elems_item_title">РЕЗИДЕНТ</h3>
+                                <ul class="tarif__elems_item_list">
+                                    <li>Доступ к личному кабинету</li>
+                                    <li>Доступ к разделу Академия (VIP-Резидент)</li>
+                                    <li>Доступ к основным торговым алгоритмам (комиссия с прибыли 16%)</li>
+                                    <li>Закрытый телеграм-канал</li>
+                                    <li>Инвестиционные идеи (до 10 в месяц. Фондовый рынок, криптовалюта)</li>
+                                    <li>Еженедельная аналитика финансовых рынков</li>
+                                    <li>Персональная помощь куратора</li>
+                                    <li>Помощь в составлении личного финансового плана</li>
+                                    <li>Инвестции в бизнес (в том числе совместные ПУЛы)</li>
+                                    <li>Доступ к онлайн обучению от ведущих экспертов</li>
+                                    <li>Помощь в подборе доходной недвижимости в России и за рубежом</li>
+                                    <li>Персональный запрос на экспертную помощь</li>
+                                    <li>Помощь и полное документальное и юридическое сопровождение по вопросам подбора доходной недвижимости в России и за рубежом</li>
+                                    <li>Безоплатный доступ на все оффлайн мероприятия клуба, в том числе за рубежом</li>
+                                </ul>
+                            </div>
+                            <div class="tarif__elems_item_footer">
+                                <p class="tarif__elems_item_priceName">СТОИМОСТЬ</p>
+                                <p class="tarif__elems_item_price">59 900 руб.</p>
+                                <button type="button" class="tarif__elems_item_btn">Вступить сейчас</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="tarif__elems_item">
-                        <div class="tarif__elems_item_wrapper">
-                            <img src="images/tarif2.png" alt="" class="tarif__elems_item_icon">
-                            <h3 class="tarif__elems_item_title">пользователь PRO</h3>
-                            <ul class="tarif__elems_item_list">
-                                <li>Доступ к личному кабинету</li>
-                                <li>Доступ к разделу Академия (резидент)</li>
-                                <li>Доступ к основным торговым алгоритмам (комиссия с прибыли 20%)</li>
-                                <li>Закрытый телеграм-канал</li>
-                                <li>Инвестиционные идеи (до 10 в месяц. Фондовый рынок, криптовалюта)</li>
-                                <li>Еженедельная аналитика финансовых рынков</li>
-                                <li>Персональная помощь куратора</li>
-                                <li>Помощь в составлении личного финансового плана</li>
-                                <li>Инвестции в бизнес (в том числе совместные ПУЛы)</li>
-                                <li>Доступ к онлайн обучению от ведущих экспертов</li>
-                                <li>Помощь в подборе доходной недвижимости в России и за рубежом</li>
-                            </ul>
-                        </div>
-                        <div class="tarif__elems_item_footer">
-                            <p class="tarif__elems_item_priceName">СТОИМОСТЬ</p>
-                            <p class="tarif__elems_item_price">29 900 руб.</p>
-                            <button type="button" class="tarif__elems_item_btn">Вступить сейчас</button>
-                        </div>
-                    </div>
-                    <div class="tarif__elems_item">
-                        <div class="tarif__elems_item_wrapper">
-                            <img src="images/tarif3.png" alt="" class="tarif__elems_item_icon">
-                            <h3 class="tarif__elems_item_title">РЕЗИДЕНТ</h3>
-                            <ul class="tarif__elems_item_list">
-                                <li>Доступ к личному кабинету</li>
-                                <li>Доступ к разделу Академия (VIP-Резидент)</li>
-                                <li>Доступ к основным торговым алгоритмам (комиссия с прибыли 16%)</li>
-                                <li>Закрытый телеграм-канал</li>
-                                <li>Инвестиционные идеи (до 10 в месяц. Фондовый рынок, криптовалюта)</li>
-                                <li>Еженедельная аналитика финансовых рынков</li>
-                                <li>Персональная помощь куратора</li>
-                                <li>Помощь в составлении личного финансового плана</li>
-                                <li>Инвестции в бизнес (в том числе совместные ПУЛы)</li>
-                                <li>Доступ к онлайн обучению от ведущих экспертов</li>
-                                <li>Помощь в подборе доходной недвижимости в России и за рубежом</li>
-                                <li>Персональный запрос на экспертную помощь</li>
-                                <li>Помощь и полное документальное и юридическое сопровождение по вопросам подбора доходной недвижимости в России и за рубежом</li>
-                                <li>Безоплатный доступ на все оффлайн мероприятия клуба, в том числе за рубежом</li>
-                            </ul>
-                        </div>
-                        <div class="tarif__elems_item_footer">
-                            <p class="tarif__elems_item_priceName">СТОИМОСТЬ</p>
-                            <p class="tarif__elems_item_price">59 900 руб.</p>
-                            <button type="button" class="tarif__elems_item_btn">Вступить сейчас</button>
-                        </div>
-                    </div>
+                    <div class="tarif__slider_pagination"></div>
                 </div>
             </div>
         </section>
 
         <section class="info">
             <img src="images/info.png" alt="" class="info__img">
+            <img src="images/infoMobile.png" alt="" class="info__img mobile">
             <div class="info__wrapper">
                 <h2 class="info__title">
                     <strong>Вступи в клуб</strong> и получи доступ к лучшим инвестиционным идеям,

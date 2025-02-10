@@ -1,7 +1,6 @@
 import { adaptive } from "../adaptiveMode/adaptive.js";
 window.adaptive = adaptive;
 adaptive();
-window.addEventListener('resize', function () { adaptive() });
 
 
 import {
@@ -17,7 +16,6 @@ document.querySelector('#defaultProduct').click();
 const resident = new Swiper(".resident__slider", {
     cssMode: true,
     loop: true,
-    slidesPerView: 3,
     spaceBetween: 40,
     navigation: {
         nextEl: ".resident__slider_btn.next",
@@ -28,4 +26,81 @@ const resident = new Swiper(".resident__slider", {
     },
     mousewheel: true,
     keyboard: true,
+    breakpoints: {
+        280: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        }
+    }
+});
+
+
+const productContent = new Swiper(".productContent", {
+    cssMode: false,
+    loop: true,
+    slidesPerView: 1,
+    navigation: {
+        nextEl: ".product__slider_btn.next",
+        prevEl: ".product__slider_btn.prev",
+    },
+    pagination: {
+        el: ".product__slider_pagination",
+    }
+});
+
+
+function sliderMobile() {
+    if (document.body.clientWidth < 480) {
+        const result = new Swiper(".resultSlider", {
+            cssMode: false,
+            spaceBetween: 20,
+            loop: true,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: ".result__slider_btn.next",
+                prevEl: ".result__slider_btn.prev",
+            },
+            pagination: {
+                el: ".result__slider_pagination",
+            }
+        });
+        const tarif = new Swiper(".tarifSlider", {
+            cssMode: false,
+            spaceBetween: 20,
+            loop: true,
+            allowTouchMove: false,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: ".tarif__slider_btn.next",
+                prevEl: ".tarif__slider_btn.prev",
+            },
+            pagination: {
+                el: ".tarif__slider_pagination",
+            }
+        });
+
+        let slide = document.querySelector('.tarifSlider .swiper-slide-active');
+        document.querySelector('.tarif__elems').style.height = slide.clientHeight + 'px';
+
+        let btns = document.querySelectorAll('.tarif__slider_btn');
+        btns.forEach(element => {
+            element.addEventListener('click', function () {
+                slide = document.querySelector('.tarifSlider .swiper-slide-active');
+                document.querySelector('.tarif__elems').style.height = slide.clientHeight + 'px';
+            })
+        });
+    }
+}
+sliderMobile();
+
+window.addEventListener('resize', function () {
+    adaptive();
+    sliderMobile();
 });
