@@ -7,11 +7,11 @@
         margin: 0 auto;
         padding: 80px 50px 95px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 991px) {
             padding: 60px 10px;       
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 576px) {
             padding: 60px 5px;   
         }
     }
@@ -24,7 +24,7 @@
         font-family: 'DrukTextWideCyr-Medium';
         margin-bottom: 40px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 991px) {
             max-width: 400px;
             margin: 0 auto 40px;
             font-size: 28px;
@@ -41,7 +41,7 @@
             z-index: 1010;
             display: none;
 
-            @media (max-width: 480px) {
+            @media (max-width: 576px) {
                 display: block;
             }
 
@@ -61,7 +61,7 @@
             justify-content: center;
             display: none;
 
-            @media (max-width: 480px) {
+            @media (max-width: 576px) {
                 display: flex;
             }
             
@@ -69,7 +69,7 @@
                 background: #fff;
                 opacity: 1;
 
-                @media (max-width: 480px) {
+                @media (max-width: 576px) {
                     width: 6px;
                     height: 6px;
                 }
@@ -82,7 +82,7 @@
     }
 
     .tarifSlider {
-        @media (max-width: 480px) {
+        @media (max-width: 576px) {
             position: relative;
             padding: 0 15px;
             height: fit-content;
@@ -95,7 +95,7 @@
         grid-gap: 45px;
         height: 1200px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 991px) {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -103,7 +103,7 @@
             height: auto;
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 576px) {
             flex-wrap: nowrap;
             justify-content: flex-start;
             gap: 0;
@@ -119,12 +119,12 @@
             flex-direction: column;
             justify-content: space-between;
 
-            @media (max-width: 768px) {
+            @media (max-width: 991px) {
                 max-width: 300px;
                 height: auto;
             }
 
-            @media (max-width: 480px) {
+            @media (max-width: 576px) {
                 width: 100%;
                 max-width: 100%;
                 height: fit-content;
@@ -145,7 +145,7 @@
                 font-family: 'DrukTextWideCyr-Medium';
                 margin-bottom: 26px;
 
-                @media (max-width: 768px) {
+                @media (max-width: 991px) {
                     font-size: 16px;
                     line-height: 20px;
                     margin-bottom: 32px;
@@ -163,7 +163,7 @@
                     line-height: 19px;
                     letter-spacing: 7%;
 
-                    @media (max-width: 768px) {
+                    @media (max-width: 991px) {
                         font-size: 14px;
                         line-height: 16.5px;
                     }
@@ -176,7 +176,7 @@
                 letter-spacing: 7%;
                 text-align: center;
 
-                @media (max-width: 768px) {
+                @media (max-width: 991px) {
                     margin-top: 90px;
                 }   
             }

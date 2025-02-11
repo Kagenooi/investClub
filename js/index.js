@@ -30,11 +30,11 @@ const resident = new Swiper(".resident__slider", {
         280: {
             slidesPerView: 1,
         },
-        480: {
+        576: {
             slidesPerView: 2,
             spaceBetween: 20,
         },
-        768: {
+        991: {
             slidesPerView: 3,
             spaceBetween: 40,
         }
@@ -57,7 +57,7 @@ const productContent = new Swiper(".productContent", {
 
 
 function sliderMobile() {
-    if (document.body.clientWidth < 480) {
+    if (document.body.clientWidth < 576) {
         const result = new Swiper(".resultSlider", {
             cssMode: false,
             spaceBetween: 20,

@@ -18,12 +18,12 @@
         margin: 0 auto;
         padding: 75px 50px 70px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 991px) {
             padding: 75px 30px 60px;
         }
 
-        @media (max-width: 480px) {
-            padding: 60px 10px;
+        @media (max-width: 576px) {
+            padding: 60px 5px;
         }
     }
 
@@ -37,13 +37,13 @@
         margin-bottom: 40px;
         text-transform: uppercase;
 
-        @media (max-width: 768px) {
+        @media (max-width: 991px) {
             margin-bottom: 30px;
             font-size: 28px;
             line-height: 35.5px;
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 576px) {
             font-size: 22px;
             line-height: 28px;
         }
@@ -54,12 +54,12 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 40px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 991px) {
             grid-template-columns: 1fr;
             grid-gap: 20px;
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 576px) {
             display: flex;
             gap: 0;
         }
@@ -75,7 +75,7 @@
             z-index: 1010;
             display: none;
 
-            @media (max-width: 480px) {
+            @media (max-width: 576px) {
                 display: block;
             }
 
@@ -95,13 +95,13 @@
             justify-content: center;
             display: none;
 
-            @media (max-width: 480px) {
-                display: block;
+            @media (max-width: 576px) {
+                display: flex;
             }
             
             .swiper-pagination-bullet {
 
-                @media (max-width: 480px) {
+                @media (max-width: 576px) {
                     width: 6px;
                     height: 6px;
                 }
@@ -114,9 +114,9 @@
     }
 
     .resultSlider {
-        @media (max-width: 480px) {
+        @media (max-width: 576px) {
             position: relative;
-            padding: 0 10px;
+            padding: 0 15px;
         }
     }
 
@@ -126,17 +126,19 @@
         height: 390px;
         padding: 40px 35px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 991px) {
             padding: 40px 30px;
-            height: 310px;
+            height: auto;
             background: url('../../images/resultTablet.png') no-repeat center;
+            background-size: 100% 100%;
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 576px) {
             padding: 50px 10px;   
             background: url('../../images/resultMobile.png') no-repeat center;
             background-size: contain;
             height: 380px;
+            min-height: fit-content;
         }
 
         &_header {
@@ -144,7 +146,7 @@
             align-items: center;
             gap: 20px;
 
-            @media (max-width: 480px) {
+            @media (max-width: 576px) {
                 gap: 10px;
             }
             &_img {
@@ -153,12 +155,12 @@
                 border-radius: 50%;
                 object-fit: cover;
 
-                @media (max-width: 768px) {
+                @media (max-width: 991px) {
                     width: 90px;
                     height: 90px;
                 }
 
-                @media (max-width: 480px) {
+                @media (max-width: 576px) {
                     width: 50px;
                     height: 50px;
                 }
@@ -174,12 +176,12 @@
                 font-family: 'DrukTextWideCyr-Medium';
                 -webkit-text-fill-color: transparent;
 
-                @media (max-width: 768px) {
+                @media (max-width: 991px) {
                     font-size: 16px;
                     line-height: 20px;
                 }
 
-                @media (max-width: 480px) {
+                @media (max-width: 576px) {
                     font-size: 12px;
                     line-height: 15px;
                 }
@@ -190,7 +192,7 @@
                 line-height: 14px;
                 letter-spacing: 7%;
 
-                @media (max-width: 480px) {
+                @media (max-width: 576px) {
                     font-size: 14px;
                 }
             }
@@ -212,7 +214,7 @@
                 list-style-type: disc;
                 gap: 15px;
 
-                @media (max-width: 480px) {
+                @media (max-width: 576px) {
                     font-size: 14px;
                     line-height: 16px;
                     gap: 0;
