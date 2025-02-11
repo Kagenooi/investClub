@@ -1310,7 +1310,7 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1456px) {
   #adaptive {
     min-width: 1280px;
     max-width: 1280px;
