@@ -27,6 +27,7 @@
     color: #fff;
     font-family: sans-serif;
     font-family: 'Gilroy';
+    transition: .2s;
 }
 
 html {
@@ -73,4 +74,16 @@ a {
 ul,
 ol {
     list-style: none;
+}
+
+
+a:not(.footer__social_link) {
+    transition: .2s;
+
+    &:hover {
+        transition: .2s;
+        background: linear-gradient(90deg, #FBE78E 0.5%, #FFF9DF 52.5%, #FBE78E 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }

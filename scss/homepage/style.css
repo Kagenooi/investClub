@@ -18,6 +18,7 @@
   color: #fff;
   font-family: sans-serif;
   font-family: "Gilroy";
+  transition: 0.2s;
 }
 
 html {
@@ -66,6 +67,16 @@ a {
 ul,
 ol {
   list-style: none;
+}
+
+a:not(.footer__social_link) {
+  transition: 0.2s;
+}
+a:not(.footer__social_link):hover {
+  transition: 0.2s;
+  background: linear-gradient(90deg, #FBE78E 0.5%, #FFF9DF 52.5%, #FBE78E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer {
@@ -137,11 +148,16 @@ ol {
   align-items: center;
   border-radius: 30px;
   background: linear-gradient(90deg, #FBE78E 0.5%, #FFF9DF 55.5%, #FBE78E 100%);
-  box-shadow: 0px 0px 30px 0px rgba(255, 239, 192, 0.6);
   padding: 4px 50px;
   margin: 0 auto;
   width: 100%;
   max-width: 460px;
+  transition: 0.2s;
+}
+.footer__social_link:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 30px 0px rgba(255, 239, 192, 0.6);
+  background: linear-gradient(90deg, #FBE78E 0.5%, #FFF9DF 55.5%, #FBE78E 100%);
 }
 @media (max-width: 576px) {
   .footer__social_link {
@@ -163,7 +179,7 @@ ol {
   text-align: center;
   text-transform: uppercase;
   font-family: "DrukTextWideCyr-Medium";
-  color: #000;
+  color: #000 !important;
 }
 @media (max-width: 576px) {
   .footer__social_link_txt {
@@ -233,7 +249,6 @@ ol {
   justify-content: center;
   border-radius: 30px;
   background: linear-gradient(270deg, #0B0C10 0%, #3C4155 50%, #0B0C10 100%);
-  box-shadow: 0px 0px 30px 0px rgba(255, 239, 192, 0.6);
   padding: 14px 50px;
   width: 100%;
   color: #FBE78E;
@@ -244,6 +259,11 @@ ol {
   text-transform: uppercase;
   font-family: "DrukTextWideCyr-Medium";
   height: 100%;
+  transition: 0.2s;
+}
+.footer__contact_link:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 30px 0px rgba(255, 239, 192, 0.6);
 }
 @media (max-width: 991px) {
   .footer__contact_link {
@@ -644,9 +664,13 @@ ol {
   background: linear-gradient(90deg, #FBE78E 0.5%, #FFF9DF 55.5%, #FBE78E 100%);
   color: #000;
   text-transform: uppercase;
-  box-shadow: 0px 0px 30px 0px rgba(255, 239, 192, 0.6);
   font-family: "DrukTextWideCyr-Medium";
   margin-top: 40px;
+  transition: 0.2s;
+}
+.product__tabs_el_btn:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 30px 0px rgba(255, 239, 192, 0.6);
 }
 @media (max-width: 991px) {
   .product__tabs_el_btn {
@@ -1302,13 +1326,17 @@ ol {
   color: #000;
   border-radius: 30px;
   background: linear-gradient(90deg, #FBE78E 0.5%, #FFF9DF 55.5%, #FBE78E 100%);
-  box-shadow: 0px 0px 30px 0px rgba(255, 239, 192, 0.6);
   padding: 4px 20px;
   margin: 0 auto;
   width: 100%;
   max-width: 260px;
   font-family: "DrukTextWideCyr-Medium";
   text-transform: uppercase;
+  transition: 0.2s;
+}
+.tarif__elems_item_btn:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 30px 0px rgba(255, 239, 192, 0.6);
 }
 
 body {
@@ -1377,8 +1405,16 @@ body {
 .header__img {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   z-index: 1010;
+}
+@media (max-width: 1280px) {
+  .header__img {
+    bottom: 0;
+  }
 }
 @media (max-width: 991px) {
   .header__img {
@@ -1502,8 +1538,12 @@ body {
   text-align: center;
   border-radius: 30px;
   white-space: nowrap;
-  box-shadow: 0px 0px 30px 0px rgba(255, 239, 192, 0.6);
   font-family: "DrukTextWideCyr-Medium";
+  transition: 0.2s;
+}
+.header__btns_btn:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 30px 0px rgba(255, 239, 192, 0.6);
 }
 @media (max-width: 576px) {
   .header__btns_btn {
@@ -1858,9 +1898,13 @@ body {
   border-radius: 30px;
   background: linear-gradient(90deg, #FBE78E 0.5%, #FFF9DF 55.5%, #FBE78E 100%);
   color: #000;
-  box-shadow: 0px 0px 30px 0px rgba(255, 239, 192, 0.6);
   font-family: "DrukTextWideCyr-Medium";
   text-transform: uppercase;
+  transition: 0.2s;
+}
+.about__btn:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 30px 0px rgba(255, 239, 192, 0.6);
 }
 @media (max-width: 576px) {
   .about__btn {
@@ -2013,13 +2057,17 @@ body {
   color: #000;
   border-radius: 30px;
   background: linear-gradient(90deg, #FBE78E 0.5%, #FFF9DF 55.5%, #FBE78E 100%);
-  box-shadow: 0px 0px 30px 0px rgba(255, 239, 192, 0.6);
   padding: 4px 50px;
   margin: 0 auto;
   width: 100%;
   max-width: 460px;
   font-family: "DrukTextWideCyr-Medium";
   text-transform: uppercase;
+  transition: 0.2s;
+}
+.info__btn:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 30px 0px rgba(255, 239, 192, 0.6);
 }
 @media (max-width: 576px) {
   .info__btn {

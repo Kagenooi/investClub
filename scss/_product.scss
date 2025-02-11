@@ -288,9 +288,14 @@
                 background: linear-gradient(90deg, #FBE78E 0.5%, #FFF9DF 55.5%, #FBE78E 100%);
                 color: #000;
                 text-transform: uppercase;
-                box-shadow: 0px 0px 30px 0px #FFEFC099;
                 font-family: 'DrukTextWideCyr-Medium';
                 margin-top: 40px;
+                transition: .2s;
+
+                &:hover {
+                    transition: .2s;
+                    box-shadow: 0px 0px 30px 0px rgba(255, 239, 192, 0.6);
+                }
 
                 @media (max-width: 991px) {
                     margin-top: 20px;
