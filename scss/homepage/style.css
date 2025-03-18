@@ -835,16 +835,16 @@ a:not(.footer__social_link):hover {
   background: url("../../images/resident.png") no-repeat center;
   background-size: 100% 100%;
   padding: 40px 20px;
-  height: 615px;
+  min-height: 615px;
 }
 @media (max-width: 991px) {
   .resident__item {
-    height: 530px;
+    min-height: 530px;
   }
 }
 @media (max-width: 576px) {
   .resident__item {
-    height: 480px;
+    min-height: 480px;
   }
 }
 .resident__item_img {
@@ -1404,7 +1404,7 @@ body {
     bottom: 0;
     left: 0;
     z-index: 1015;
-    background: linear-gradient(174.13deg, rgba(0, 0, 0, 0) 16.9%, #000000 34.58%);
+    background: linear-gradient(174.13deg, rgba(0, 0, 0, 0) 16.9%, #000000 45%);
   }
 }
 @media (max-width: 576px) {
@@ -1419,7 +1419,7 @@ body {
 .header__img {
   width: 100%;
   position: absolute;
-  bottom: -100px;
+  bottom: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -1529,10 +1529,16 @@ body {
   position: relative;
   z-index: 1020;
 }
+@media (max-width: 1424px) {
+  .header__btns {
+    margin-bottom: -60px;
+  }
+}
 @media (max-width: 991px) {
   .header__btns {
     margin-top: 187px;
     gap: 15px;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 576px) {

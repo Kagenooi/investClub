@@ -106,14 +106,14 @@
         background: url('../../images/resident.png') no-repeat center;
         background-size: 100% 100%;
         padding: 40px 20px;
-        height: 615px;
+        min-height: 615px;
 
         @media (max-width: 991px) {
-            height: 530px;   
+            min-height: 530px;   
         }
 
         @media (max-width: 576px) {
-            height: 480px;   
+            min-height: 480px;   
         }
         &_img {
             margin: 0 auto 36px;
