@@ -1,10 +1,10 @@
 export function adaptive() {
     const wrapper = document.querySelector('#adaptive');
     let zoom = document.body.clientWidth / 19.2 / 100;
-    if (document.body.clientWidth > 975 && document.body.clientWidth < 1406) {
+    if (document.body.clientWidth > 991 && document.body.clientWidth < 1410) {
         zoom = document.body.clientWidth / 12.8 / 100;
     }
-    if (document.body.clientWidth > 576 && document.body.clientWidth < 977) {
+    if (document.body.clientWidth > 576 && document.body.clientWidth < 992) {
         zoom = document.body.clientWidth / 6.4 / 100;
     }
     if (document.body.clientWidth < 577) {

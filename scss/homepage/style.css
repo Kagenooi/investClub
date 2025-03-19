@@ -835,7 +835,7 @@ a:not(.footer__social_link):hover {
   background: url("../../images/resident.png") no-repeat center;
   background-size: 100% 100%;
   padding: 40px 20px;
-  min-height: 615px;
+  min-height: 640px;
 }
 @media (max-width: 991px) {
   .resident__item {
@@ -890,7 +890,6 @@ a:not(.footer__social_link):hover {
 }
 .resident__item_pr {
   line-height: 18.83px;
-  letter-spacing: 7%;
   text-align: center;
 }
 @media (max-width: 991px) {
