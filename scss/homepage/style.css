@@ -1605,7 +1605,7 @@ body {
 }
 @media (max-width: 576px) {
   .about__img {
-    width: auto;
+    width: 100%;
     left: 0;
   }
 }
